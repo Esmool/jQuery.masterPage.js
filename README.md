@@ -41,7 +41,7 @@ Complete HTML document format should be formed in the master page file. Use attr
 		</body>
 	</html>
 ```
-Three place holders appeare in the demostration are
+Three place holders appear in the demostration are
 ```HTML
 	<title masterPlaceHolder="title">Deafult Title</title>
 ```
