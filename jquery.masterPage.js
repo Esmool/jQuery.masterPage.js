@@ -8,7 +8,7 @@
      * 执行母板解析
      */
     function parse() {
-    	var collection = $('div[masterTag], *[masterPlaceHolder]');
+        var collection = $('div[masterTag], *[masterPlaceHolder]');
         collection.filter('div[masterTag]').each(function () {
             var content = $(this).html();
             var tagName = $(this).attr('masterTag');
