@@ -8,7 +8,7 @@ jQuery 1.11.1 (Tested, compatibility to earlier version is not guaranteed)
 
 ### Make master page
 
-Using jsp as demostraction.
+Using jsp as demonstration.
 
 Complete HTML document format should be formed in the master page file. Use attribute **masterPlaceHoler** as the place holder, set the place holder's name as the value of the attribute. Like this
 ```HTML
@@ -58,11 +58,11 @@ A single place holder can be used in master page any times as wish, just keep us
 
 **NOTICIE**
 
-Anything as common staff define in master page, can be visited in the page that applicating the master page, like javascript libs, style sheet files, functions, variables and styles. Be sure to avoid naming confliction accordingly.
+Anything as common staff defined in master page, can be visited in the page that applicating the master page, like javascript libs, style sheet files, functions, variables and styles. Be sure to avoid naming confliction accordingly.
 
 ### Applicating master page
 
-Use jsp as demostration, too.
+Use jsp as demonstration, too.
 
 Reference the master page first, using format
 ```HTML
@@ -75,13 +75,13 @@ Then implement the place holders like this
 		<!-- TODO: add anything necessary -->
 	</div>
 ```
-Only element **div** should be use to indicate the place holder, and any other attribute should not be appended, except **masterTag**.
+Only element **div** should be used to indicate the place holder, and any other attribute should not be appended, except **masterTag**.
 
-When page ready event is needed, the global function named **pageLoad()** is strongly recommended the do the job, instead of *$(document).ready()* and *onload* event on *body* element. The pageLoad() function can assure the accomplishment of the master parse mechanism.
+When page ready event is needed, the global function named **pageLoad()** is strongly recommended to do the job, instead of *$(document).ready()* and *onload* event on *body* element. The pageLoad() function can assure the accomplishment of the master parsing mechanism.
 
 If there is no pageLoad() function in the page, a warning message will appear in the console of the browser. Ignore it if really don't want to write the pageLoad() function.
 
-Suppose the demostracted master page above saved in file /view/master/demoMaster.jsp, the whole file that applicating the master page should like this
+Suppose the demonstracted master page above saved in file /view/master/demoMaster.jsp, the whole file that applicating the master page should look like this
 ```HTML
 	<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 	<%@ include file="/view/masters/demoMaster.jsp" %>
@@ -102,7 +102,7 @@ Suppose the demostracted master page above saved in file /view/master/demoMaster
 
 1. Default implementation defined in master page will be used, when the absence of implementation to corresponding place holder happens in application page;
 
-2. Implementation of place holders will be ignored, if implemented in application page but not used in master page.
+2. Implementation of place holders will be ignored, if implemented in application page but not used in master page;
 
 3. Any thing define in master page, can be seen in application page. Like scripts file references, style file references, local scripts and local styles. So make sure to avoid naming confliction between master/application pages.
 
@@ -110,6 +110,6 @@ Suppose the demostracted master page above saved in file /view/master/demoMaster
 
 This is a front end javascript plugin for master page mechanism, all jobs' done in the browser.
 
-In the enviroument of jsp, it worked fine, is tested & has been made use during a project. Theoretically it can also work with any dynamical web application, like ASP/ASP.NET, PHP, etc. Just replace the corresponding part in the header, to include(reference) the master page into the content flow on server side. This is not tested, and no guaranteed made here. Anyone would like to paticipate, is welcomed.
+In the enviroument of jsp, it worked fine, is tested & has been made use of during a project. Theoretically it can also work with any dynamic web application, such like ASP/ASP.NET, PHP, etc. Just replace the corresponding part in the header, to include(reference) the master page into the content flow on server side. This is not tested, and no guaranteed made here. Anyone would like to paticipate, is welcomed.
 
 This plugin is design for multipage web application, not compatible with any Single Page Application framework.
