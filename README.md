@@ -54,7 +54,7 @@ Three place holders appear in the demostration are
 
 Default implementation for place holders can be used. When the application page using that master page does not implement them, the default implementations will be used. Just like the place holder 'title' in the case above.
 
-A single place holder can be used in master page any times if wish, keep using the same name, like the place holder 'title' in the case above.
+A single place holder can be used in master page any times as wish, just keep using the same name, like the place holder 'title' above.
 
 **NOTICIE**
 
