@@ -113,3 +113,4 @@ This is a front end javascript plugin for master page mechanism, all jobs' done 
 In the enviroument of jsp, it worked fine, is tested & has been made use of during a project. Theoretically it can also work with any dynamic web application, such like ASP/ASP.NET, PHP, etc. Just replace the corresponding part in the header, to include(reference) the master page into the content flow on server side. This is not tested, and no guaranteed made here. Anyone would like to paticipate, is welcomed.
 
 This plugin is design for multipage web application, not compatible with any Single Page Application framework.
+
